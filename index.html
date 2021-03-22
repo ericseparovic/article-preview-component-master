@@ -1,28 +1,70 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+		<title>Frontend Mentor | Article preview component</title>
+	</head>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-</body>
+	<body>
+		<main class="card">
+			<picture class="card__image"> </picture>
+			<div class="card__content">
+				<div class="card__text">
+					<h2>
+						Shift the overall look and feel by adding these wonderful touches to furniture
+						in your home
+					</h2>
+					<p>
+						Ever been in a room and felt like something was missing? Perhaps it felt
+						slightly bare and uninviting. I’ve got some simple tips to help you make any
+						room feel complete.
+					</p>
+				</div>
+				<div class="card__avatar__name__share">
+					<div class="card__avatar__name">
+						<div class="card__avatar">
+							<img src="/images/avatar-michelle.jpg" alt="" />
+						</div>
+						<div class="card__name">
+							<p>Michelle Appleton</p>
+							<p>28 Jun 2020</p>
+						</div>
+					</div>
+					<div class="card__share">
+						<img src="images/icon-share.svg" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="share">
+				<div class="share__image">
+					<div>
+						<p>SHARE</p>
+					</div>
+					<div>
+						<img src="images/icon-facebook.svg" alt="" />
+					</div>
+					<div>
+						<img src="images/icon-twitter.svg" alt="" />
+					</div>
+					<div>
+						<img src="images/icon-pinterest.svg" alt="" />
+					</div>
+				</div>
+				<div class="share__triangle"></div>
+			</div>
+		</main>
+		<script src="/js/script.js"></script>
+	</body>
 </html>

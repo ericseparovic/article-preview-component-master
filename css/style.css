@@ -1,3 +1,216 @@
+/** @format */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 13px;
+  background-color: #ecf2f8;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  max-width: 80rem;
+  min-height: 32rem;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 2rem;
+}
+.card .card__image {
+  background-image: url(/images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  flex-basis: 10rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.card__content {
+  flex: 2;
+  padding: 4rem;
+}
+
+.card__avatar__name {
+  display: flex;
+  align-items: center;
+}
+.card__avatar__name .card__avatar {
+  margin-right: 2rem;
+}
+.card__avatar__name .card__avatar img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.card__avatar__name .card__name {
+  font-weight: 700;
+}
+.card__avatar__name .card__name p {
+  padding: 0;
+  margin: 0;
+  line-height: 2rem;
+}
+.card__avatar__name .card__name p:nth-child(1) {
+  color: #48556a;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.card__avatar__name .card__name p:nth-child(2) {
+  color: #6d7f97;
+  font-weight: bold;
+}
+
+.card__avatar__name__share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__avatar__name__share .card__share {
+  padding-right: 2.4rem;
+}
+.card__avatar__name__share .card__share img {
+  width: 3rem;
+  cursor: pointer;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.card__text {
+  margin-bottom: 2rem;
+}
+.card__text h2 {
+  color: #48556a;
+  font-size: 2rem;
+}
+.card__text p {
+  font-size: 1.4rem;
+  color: #6d7f97;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.share__image {
+  position: absolute;
+  display: flex;
+  width: 22rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 2rem;
+  background-color: #48556a;
+  top: 18.5rem;
+  right: -3rem;
+}
+.share__image p {
+  color: #6d7f97;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.share__triangle {
+  width: 0;
+  height: 0;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-top: 15px solid #48556a;
+  position: absolute;
+  top: 229px;
+  right: 59px;
+}
+
+@media (max-width: 760px) {
+  .card {
+    flex-direction: column;
+    margin: 10rem;
+    max-height: 62rem;
+  }
+  .card .card__image {
+    background-image: url(/images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 0;
+    flex-basis: 30rem;
+    border-radius: 2rem 2rem 0 0;
+    min-height: 30rem;
+  }
+  .card .card__content {
+    padding-bottom: 1.2rem;
+  }
+  .card .card__content p {
+    font-size: 1.5rem;
+  }
+  .card .card__content h2 {
+    font-size: 2rem;
+  }
+
+  .share__image {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    border-radius: 0rem 0rem 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 4rem;
+    padding-right: 15rem;
+    background-color: #48556a;
+    top: 55rem;
+    right: 0;
+    height: 7rem;
+  }
+  .share__image p {
+    color: #6d7f97;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+  }
+
+  .share__triangle {
+    display: none;
+  }
+
+  .card__avatar__name__share .card__share {
+    position: absolute;
+    top: 56.8rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    margin: 5rem;
+  }
+}
+@media (max-width: 455px) {
+  .card {
+    margin: 1rem;
+  }
+  .card .card__image {
+    min-height: 15rem;
+  }
+  .card .card__content h2 {
+    font-size: 1.8rem;
+  }
+  .card .card__content p {
+    font-size: 1.4rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
