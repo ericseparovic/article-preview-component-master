@@ -8,6 +8,7 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
+
 *,
 *:before,
 *:after {
@@ -38,7 +39,7 @@ body {
 	margin: 2rem;
 
 	.card__image {
-		background-image: url(/images/drawers.jpg);
+		background-image: url(../images/drawers.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		flex: 1;
@@ -55,8 +56,10 @@ body {
 .card__avatar__name {
 	display: flex;
 	align-items: center;
+
 	.card__avatar {
 		margin-right: 2rem;
+
 		img {
 			width: 5rem;
 			border-radius: 50%;
@@ -156,7 +159,7 @@ body {
 		max-height: 62rem;
 
 		.card__image {
-			background-image: url(/images/drawers.jpg);
+			background-image: url(../images/drawers.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			flex: 0;
@@ -168,6 +171,7 @@ body {
 
 		.card__content {
 			padding-bottom: 1.2rem;
+
 			p {
 				font-size: 1.5rem;
 			}
@@ -222,6 +226,7 @@ body {
 @media (max-width: 455px) {
 	.card {
 		margin: 1rem;
+
 		.card__image {
 			min-height: 15rem;
 		}
